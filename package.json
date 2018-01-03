@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "lint": "eslint ./*.js",
+    "lint": "eslint ./**/*.js",
     "tests": "node test/run.js",
     "test": "npm run lint && npm run tests"
   },
