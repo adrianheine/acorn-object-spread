@@ -49,7 +49,7 @@ module.exports = function(acorn) {
       }
     })
     instance.extend("checkPropClash", function (nextMethod) {
-      return function(prop, propHash) {
+      return function(prop/*, propHash*/) {
         if (prop.type == "SpreadElement" || prop.type == "RestElement") return
         return nextMethod.apply(this, arguments)
       }
