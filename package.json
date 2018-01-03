@@ -12,10 +12,15 @@
   },
   "license": "MIT",
   "scripts": {
-    "test": "node test/run.js"
+    "lint": "eslint ./*.js",
+    "tests": "node test/run.js",
+    "test": "npm run lint && npm run tests"
   },
   "dependencies": {
     "acorn": "^5.2.1"
   },
-  "version": "5.0.0"
+  "version": "5.0.0",
+  "devDependencies": {
+    "eslint": "4.14.0"
+  }
 }
