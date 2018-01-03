@@ -516,7 +516,8 @@ var fbTestFixture = {
 if (typeof exports !== "undefined") {
   var test = require("./driver.js").test;
   var testFail = require("./driver.js").testFail;
-  var tokTypes = require("../").tokTypes;
+
+  // var tokTypes = require("../").tokTypes;
 }
 
 testFail("({get x() {}}) => {}", "Object pattern can't contain getter or setter (1:6)")
