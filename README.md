@@ -1,6 +1,6 @@
 # Spread and rest properties support in acorn 5
 
-[![NPM version](https://img.shields.io/npm/v/acorn5-object-spread.svg)](https://www.npmjs.org/package/acorn5-object-spread)
+[![NPM version](https://img.shields.io/npm/v/acorn5-object-spread.svg)](https://www.npmjs.org/package/acorn5-object-spread) [![Build Status](https://travis-ci.org/adrianheine/acorn5-object-spread.svg?branch=master)](https://travis-ci.org/adrianheine/acorn5-object-spread)
 
 This is plugin for [Acorn](http://marijnhaverbeke.nl/acorn/) - a tiny, fast JavaScript parser, written completely in JavaScript.
 
