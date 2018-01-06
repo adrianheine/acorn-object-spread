@@ -1,6 +1,8 @@
 var driver = require("./driver.js");
 require("./tests-object-spread.js");
 
+var name;
+
 function group(name) {
   if (typeof console === "object" && console.group) {
     console.group(name);
@@ -32,7 +34,7 @@ function report(state, code, message) {
 
 group("Errors");
 
-for (var name in modes) {
+for (name in modes) {
   group(name);
   var mode = modes[name];
   stats = mode.stats = {testsRun: 0, failed: 0};
@@ -53,8 +55,8 @@ var total = {testsRun: 0, failed: 0, duration: 0};
 
 group("Stats");
 
-for (var name in modes) {
-  var stats = modes[name].stats;
+for (name in modes) {
+  stats = modes[name].stats;
   outputStats(name + " parser", stats);
   for (var key in stats) total[key] += stats[key];
 }
